@@ -13,7 +13,7 @@ import java.util.jar.JarException;
 public class Utils {
     //all the data try to get or fetch
     public static final String Base_URL="http://api.openweathermap.org/data/2.5/weather?q=";
-    public static final String ICON_URL="http://api.openweathermap.org/img/w/";
+    //public static final String ICON_URL="http://api.openweathermap.org/img/w/";
 
     public static JSONObject getObject(String tagName,JSONObject jsonObject)throws JSONException{
         JSONObject jObj=jsonObject.getJSONObject(tagName);

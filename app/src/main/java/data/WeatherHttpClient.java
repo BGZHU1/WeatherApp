@@ -20,7 +20,9 @@ public class WeatherHttpClient {
         //http and URL Connection - connection between the app and web(API)
         //Base_URL pass in to fetch data (append the place)
         try {
-            connection = (HttpURLConnection) (new URL(Utils.Base_URL + place)).openConnection();
+            String App="&APPID=fab15bf609324ec7a6c3638fca2c7574";
+
+            connection = (HttpURLConnection) (new URL(Utils.Base_URL +place+App).openConnection());
             //get
             connection.setRequestMethod("GET");
             connection.setDoInput(true);

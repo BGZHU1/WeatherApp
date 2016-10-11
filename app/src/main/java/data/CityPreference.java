@@ -15,7 +15,7 @@ public class CityPreference {
     }
 
     public String getCity() {
-        return prefs.getString("city","NewYork,US");
+        return prefs.getString("city","London,UK");
     }
 
     public void setCity(String city){
